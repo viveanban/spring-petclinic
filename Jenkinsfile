@@ -31,7 +31,7 @@ pipeline {
   }
   post {
     always {
-      emailext(subject: 'PetClinic Build Status', body: 'Build finished!', attachLog: true, from: 'viveka98@hotmail.ca', to: 'viveka98@hotmail.ca')
+      emailext(subject: 'PetClinic Build Status', body: 'Build finished!', attachLog: true, from: 'vivekaanban@gmail.com', to: 'viveka98@hotmail.ca')
     }
 
   }
