@@ -29,4 +29,10 @@ pipeline {
     }
 
   }
+  post {
+    always {
+      emailext(subject: 'PetClinic Build Status', body: 'Build finished!', attachLog: true, from: 'viveka98@hotmail.ca', to: 'viveka98@hotmail.ca')
+    }
+
+  }
 }
